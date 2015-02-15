@@ -5,8 +5,9 @@ module Diffbot
   # a single entry point: the `.fetch` method, that, given a URL, will return
   # the article as analyzed by Diffbot.
   class Article < Hashie::Trash
-    extend CoercibleHash
     include Hashie::Extensions::IgnoreUndeclared
+    extend CoercibleHash
+
 
     # Public: Fetch an article from a URL.
     #
