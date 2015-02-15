@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
 
   s.add_dependency("excon")
   s.add_dependency("yajl-ruby")
-  s.add_dependency("nokogiri", "~> 1.5.0")
+  s.add_dependency("nokogiri")
   s.add_dependency("hashie")
-  s.add_development_dependency("bundler", "~> 1.3")
+  s.add_development_dependency("bundler")
   s.add_development_dependency("minitest")
 end
