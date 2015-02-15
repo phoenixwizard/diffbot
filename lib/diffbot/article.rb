@@ -1,6 +1,6 @@
 require "yajl"
 require 'hashie'
-require 'hashie/hash_extensions'
+require 'hashie/extensions'
 
 module Diffbot
   # Representation of an article (ie a blog post or similar). This class offers
