@@ -6,6 +6,7 @@ module Diffbot
   # the article as analyzed by Diffbot.
   class Article < Hashie::Trash
     extend CoercibleHash
+    include Hashie::Extensions::IgnoreUndeclared
 
     # Public: Fetch an article from a URL.
     #
@@ -53,9 +54,6 @@ module Diffbot
 
     # Public: Title of the article.
     property :title
-
-    # Public: Tags of the article.
-    property :tags
 
     # Public: Number of pages of the article.
     property :numPages
